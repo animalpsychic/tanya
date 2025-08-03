@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cari Solusi Keluhan Anda</title>
+  <title>Cari Solusi Keluhan</title>
   <script async src="https://cse.google.com/cse.js?cx=017084467225324144104:jx9nmt-dl_8"></script>
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #fffde7;
+      background: #fffce9;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -21,7 +21,7 @@
     h1 {
       font-size: 22px;
       text-align: center;
-      color: #333;
+      color: #444;
       margin: 32px 0 12px;
     }
 
@@ -37,25 +37,32 @@
     input.gsc-input {
       width: 100% !important;
       max-width: 500px;
-      padding: 12px !important;
+      padding: 14px 18px !important;
       font-size: 16px !important;
-      border-radius: 8px !important;
+      border-radius: 999px !important;
       border: 1px solid #ccc !important;
       background: #fff !important;
       box-shadow: none !important;
+      margin-bottom: 10px !important;
     }
 
     input.gsc-search-button {
       display: inline-block !important;
-      margin-top: 10px;
-      padding: 12px 20px !important;
-      background-color: #ffcc00 !important;
+      width: 100% !important;
+      max-width: 500px;
+      padding: 14px 18px !important;
+      background-color: #ffd700 !important;
       border: none !important;
-      border-radius: 8px !important;
+      border-radius: 999px !important;
       color: #000 !important;
       font-weight: bold !important;
       font-size: 16px !important;
       cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    input.gsc-search-button:hover {
+      background-color: #f4c842 !important;
     }
 
     .gsc-webResult.gsc-result,
@@ -69,7 +76,7 @@
 
     .gsc-result-info,
     .gsc-above-wrapper-area {
-      display: none !important; /* Optional: sembunyikan info jumlah hasil */
+      display: none !important;
     }
 
     @media (max-width: 480px) {
