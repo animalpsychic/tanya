@@ -10,72 +10,78 @@
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #fffbea;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: #fffde7;
       min-height: 100vh;
+      display: flex;
       flex-direction: column;
-    }
-
-    .search-wrapper {
-      width: 90%;
-      max-width: 500px;
-      padding: 20px 0;
+      align-items: center;
+      justify-content: flex-start;
     }
 
     h1 {
       font-size: 22px;
       text-align: center;
       color: #333;
-      margin-bottom: 16px;
+      margin: 32px 0 12px;
     }
 
-    .gsc-control-cse {
+    .gcse-search,
+    .gsc-control-cse,
+    .gsc-control-wrapper-cse {
       background: transparent !important;
       border: none !important;
-      padding: 0 !important;
       box-shadow: none !important;
+      padding: 0 !important;
     }
 
     input.gsc-input {
       width: 100% !important;
+      max-width: 500px;
       padding: 12px !important;
       font-size: 16px !important;
-      border-radius: 10px !important;
-      border: 1px solid #ddd !important;
+      border-radius: 8px !important;
+      border: 1px solid #ccc !important;
       background: #fff !important;
       box-shadow: none !important;
     }
 
     input.gsc-search-button {
-      width: 100% !important;
-      padding: 12px !important;
-      background-color: #ffdd44 !important;
+      display: inline-block !important;
+      margin-top: 10px;
+      padding: 12px 20px !important;
+      background-color: #ffcc00 !important;
+      border: none !important;
+      border-radius: 8px !important;
       color: #000 !important;
       font-weight: bold !important;
       font-size: 16px !important;
-      border-radius: 10px !important;
-      border: none !important;
-      margin-top: 10px;
       cursor: pointer;
     }
 
-    input.gsc-search-button:hover {
-      background-color: #f4c842 !important;
+    .gsc-webResult.gsc-result,
+    .gsc-webResult.gsc-result .gsc-thumbnail-inside,
+    .gs-webResult.gs-result,
+    .gsc-results .gsc-cursor-box {
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
+
+    .gsc-result-info,
+    .gsc-above-wrapper-area {
+      display: none !important; /* Optional: sembunyikan info jumlah hasil */
     }
 
     @media (max-width: 480px) {
       h1 {
         font-size: 18px;
+        margin-top: 24px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="search-wrapper">
-    <h1>Cari Solusi Keluhan Anda</h1>
-    <div class="gcse-search"></div>
-  </div>
+  <h1>Cari Solusi Keluhan Anda</h1>
+  <div class="gcse-search"></div>
 </body>
 </html>
